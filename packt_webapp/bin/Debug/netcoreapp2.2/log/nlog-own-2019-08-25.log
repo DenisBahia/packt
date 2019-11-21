@@ -1,0 +1,52 @@
+2019-08-25 12:22:44.1208||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 12:22:44.1453||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-25 12:23:03.9766||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 12:23:11.2625|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Exception:  ----> GetSingleCustomer() NotFound 00000000-0000-0000-0000-000000000000
+   at packt_webapp.Controllers.CustomersController.GetSingleCustomer(Guid id) in C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\Controllers\CustomersController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-25 12:24:14.0668||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 12:24:14.0898||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-25 12:24:21.8963||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 12:24:24.0858|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Exception:  ----> GetSingleCustomer() NotFound 15785e88-1086-4032-031b-08d727dda0d8
+   at packt_webapp.Controllers.CustomersController.GetSingleCustomer(Guid id) in C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\Controllers\CustomersController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-25 18:48:52.0565||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 18:48:52.1155||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-25 18:49:32.2844||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 18:49:39.5134||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 18:49:42.5355||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 18:56:41.8713||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 18:56:41.9122||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-25 18:56:51.5117||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 18:56:59.1923||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-25 18:57:02.3955||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 

@@ -1,0 +1,184 @@
+2019-08-25 12:22:42.9443|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/customers   
+2019-08-25 12:22:43.5451|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllCustomers", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCustomers() on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 12:22:44.1208||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 12:22:44.1453|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) - Validation state: Valid 
+2019-08-25 12:22:44.1453||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() 
+2019-08-25 12:22:44.4694|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 12:22:44.8407|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[FirstName], [c].[LastName]
+FROM [Customers] AS [c] 
+2019-08-25 12:22:44.9132|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 754.5522ms. 
+2019-08-25 12:22:44.9339|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[packt_webapp.Entities.Customer, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[packt_webapp.Dtos.CustomerDto, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-08-25 12:22:45.0733|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) in 1503.9088ms 
+2019-08-25 12:22:45.1030|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2168.1413ms 200 application/json; charset=utf-8 
+2019-08-25 12:23:03.9380|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/customers/15785e88-1086-4032-   
+2019-08-25 12:23:03.9766|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetSingleCustomer", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSingleCustomer(System.Guid) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 12:23:03.9766||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 12:23:04.0208|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp) - Validation state: Invalid 
+2019-08-25 12:23:04.0451|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 12:23:04.1461|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[FirstName], [x].[LastName]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2019-08-25 12:23:11.1941|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp) in 7210.811ms 
+2019-08-25 12:23:11.2625|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Exception:  ----> GetSingleCustomer() NotFound 00000000-0000-0000-0000-000000000000
+   at packt_webapp.Controllers.CustomersController.GetSingleCustomer(Guid id) in C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\Controllers\CustomersController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-25 12:23:11.3381|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7400.5398ms 500 text/html; charset=utf-8 
+2019-08-25 12:24:14.0435|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/customers   
+2019-08-25 12:24:14.0668|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllCustomers", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCustomers() on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 12:24:14.0668||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 12:24:14.0898|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) - Validation state: Valid 
+2019-08-25 12:24:14.0898||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() 
+2019-08-25 12:24:14.1047|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 12:24:14.1250|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[FirstName], [c].[LastName]
+FROM [Customers] AS [c] 
+2019-08-25 12:24:14.1304|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 35.4955ms. 
+2019-08-25 12:24:14.1445|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[packt_webapp.Entities.Customer, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[packt_webapp.Dtos.CustomerDto, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-08-25 12:24:14.1445|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) in 76.3158ms 
+2019-08-25 12:24:14.1670|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.0739ms 200 application/json; charset=utf-8 
+2019-08-25 12:24:21.8763|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/customers/15785e88-1086-4032-031b-08d727dda0d8   
+2019-08-25 12:24:21.8901|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetSingleCustomer", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSingleCustomer(System.Guid) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 12:24:21.8963||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 12:24:21.9181|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp) - Validation state: Valid 
+2019-08-25 12:24:21.9265|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 12:24:21.9417|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[FirstName], [x].[LastName]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2019-08-25 12:24:24.0639|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp) in 2168.5985ms 
+2019-08-25 12:24:24.0858|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Exception:  ----> GetSingleCustomer() NotFound 15785e88-1086-4032-031b-08d727dda0d8
+   at packt_webapp.Controllers.CustomersController.GetSingleCustomer(Guid id) in C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\Controllers\CustomersController.cs:line 46
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-08-25 12:24:24.1275|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2271.6344ms 500 text/html; charset=utf-8 
+2019-08-25 18:48:50.8643|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/customers   
+2019-08-25 18:48:51.4903|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllCustomers", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCustomers() on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:48:52.0565||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:48:52.0880|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) - Validation state: Valid 
+2019-08-25 18:48:52.1155||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() 
+2019-08-25 18:48:52.4811|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 18:48:53.1788|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[FirstName], [c].[LastName]
+FROM [Customers] AS [c] 
+2019-08-25 18:48:53.3027|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1183.277ms. 
+2019-08-25 18:48:53.3295|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[packt_webapp.Entities.Customer, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[packt_webapp.Dtos.CustomerDto, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-08-25 18:48:53.4955|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) in 1986.2179ms 
+2019-08-25 18:48:53.5308|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2667.8966ms 200 application/json; charset=utf-8 
+2019-08-25 18:49:32.2353|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/api/customers application/json 78 
+2019-08-25 18:49:32.2693|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "AddCustomer", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCustomer(packt_webapp.Dtos.CustomerDto) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:49:32.2844||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:49:32.3944|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp) - Validation state: Invalid 
+2019-08-25 18:49:32.4040|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2.7042ms. 
+2019-08-25 18:49:32.4330|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-08-25 18:49:32.4484|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp) in 174.4198ms 
+2019-08-25 18:49:32.4647|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 243.4043ms 400 application/json; charset=utf-8 
+2019-08-25 18:49:39.4828|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/api/customers application/json 81 
+2019-08-25 18:49:39.4974|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "AddCustomer", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCustomer(packt_webapp.Dtos.CustomerDto) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:49:39.5134||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:49:39.5341|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp) - Validation state: Invalid 
+2019-08-25 18:49:39.5451|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 0.0653ms. 
+2019-08-25 18:49:39.5530|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-08-25 18:49:39.5671|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp) in 55.4204ms 
+2019-08-25 18:49:39.5836|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 102.7007ms 400 application/json; charset=utf-8 
+2019-08-25 18:49:42.5249|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/api/customers application/json 79 
+2019-08-25 18:49:42.5355|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "AddCustomer", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCustomer(packt_webapp.Dtos.CustomerDto) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:49:42.5355||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:49:42.5633|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp) - Validation state: Valid 
+2019-08-25 18:49:45.5365|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 18:49:45.6704|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Id], [Age], [FirstName], [LastName])
+VALUES (@p0, @p1, @p2, @p3); 
+2019-08-25 18:49:45.6925|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 3123.7753ms. 
+2019-08-25 18:49:45.6925|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'packt_webapp.Dtos.CustomerDto'. 
+2019-08-25 18:49:45.7307|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.AddCustomer (packt_webapp) in 3171.9978ms 
+2019-08-25 18:49:45.7307|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3270.5359ms 201 application/json; charset=utf-8 
+2019-08-25 18:56:40.8674|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/customers application/json 65 
+2019-08-25 18:56:41.4296|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAllCustomers", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCustomers() on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:56:41.8713||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:56:41.9079|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) - Validation state: Valid 
+2019-08-25 18:56:41.9122||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() 
+2019-08-25 18:56:42.1813|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 18:56:42.6694|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Age], [c].[FirstName], [c].[LastName]
+FROM [Customers] AS [c] 
+2019-08-25 18:56:42.7501|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 832.9535ms. 
+2019-08-25 18:56:42.7821|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[packt_webapp.Entities.Customer, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[packt_webapp.Dtos.CustomerDto, packt_webapp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2019-08-25 18:56:42.9838|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.GetAllCustomers (packt_webapp) in 1503.2405ms 
+2019-08-25 18:56:43.0228|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2165.5927ms 200 application/json; charset=utf-8 
+2019-08-25 18:56:43.0472|32|INFO|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HLP9GM25O6SN", Request id "0HLP9GM25O6SN:00000001": the application completed without reading the entire request body. 
+2019-08-25 18:56:51.4583|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:5000/api/customers/15785e88-1086-4032-031b-08d727dda0d9 application/json 59 
+2019-08-25 18:56:51.5024|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PartiallyUpdate", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdate(System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[packt_webapp.Dtos.CustomerUpdateDto]) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:56:51.5117||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:56:51.6081|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp) - Validation state: Valid 
+2019-08-25 18:56:54.0277|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 18:56:54.1174|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[FirstName], [x].[LastName]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2019-08-25 18:56:54.1475|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2535.9957ms. 
+2019-08-25 18:56:54.1475|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-08-25 18:56:54.1626|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp) in 2653.4736ms 
+2019-08-25 18:56:54.1782|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2761.7434ms 400 application/json; charset=utf-8 
+2019-08-25 18:56:59.1765|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:5000/api/customers/15785e88-1086-4032-031b-08d727dda0d9 application/json 59 
+2019-08-25 18:56:59.1923|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PartiallyUpdate", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdate(System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[packt_webapp.Dtos.CustomerUpdateDto]) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:56:59.1923||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:56:59.2150|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp) - Validation state: Valid 
+2019-08-25 18:56:59.2243|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 18:56:59.2243|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[FirstName], [x].[LastName]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2019-08-25 18:56:59.2417|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 17.4318ms. 
+2019-08-25 18:56:59.2417|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'. 
+2019-08-25 18:56:59.2609|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp) in 56.0119ms 
+2019-08-25 18:56:59.2740|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 96.9948ms 400 application/json; charset=utf-8 
+2019-08-25 18:57:02.3793|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:5000/api/customers/15785e88-1086-4032-031b-08d727dda0d9 application/json 63 
+2019-08-25 18:57:02.3793|3|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "PartiallyUpdate", controller = "Customers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult PartiallyUpdate(System.Guid, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[packt_webapp.Dtos.CustomerUpdateDto]) on controller packt_webapp.Controllers.CustomersController (packt_webapp). 
+2019-08-25 18:57:02.3955||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. 
+2019-08-25 18:57:02.4216|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp) - Validation state: Valid 
+2019-08-25 18:57:02.4311|10403|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.2.6-servicing-10079 initialized 'PacktDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2019-08-25 18:57:02.4427|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[Id], [x].[Age], [x].[FirstName], [x].[LastName]
+FROM [Customers] AS [x]
+WHERE [x].[Id] = @__id_0 
+2019-08-25 18:57:02.5403|20101|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[@p3='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Customers] SET [Age] = @p0, [FirstName] = @p1, [LastName] = @p2
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT; 
+2019-08-25 18:57:02.5629|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 129.3158ms. 
+2019-08-25 18:57:02.5804|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'packt_webapp.Dtos.CustomerUpdateDto'. 
+2019-08-25 18:57:02.6325|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action packt_webapp.Controllers.CustomersController.PartiallyUpdate (packt_webapp) in 233.2293ms 
+2019-08-25 18:57:02.6488|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 282.3598ms 200 application/json; charset=utf-8 

@@ -1,0 +1,15 @@
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\bin\Debug\netcoreapp2.2\packt_webapp.deps.json
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\bin\Debug\netcoreapp2.2\packt_webapp.runtimeconfig.json
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\bin\Debug\netcoreapp2.2\packt_webapp.runtimeconfig.dev.json
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\bin\Debug\netcoreapp2.2\packt_webapp.dll
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\bin\Debug\netcoreapp2.2\packt_webapp.pdb
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.csprojAssemblyReference.cache
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.csproj.CoreCompileInputs.cache
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.RazorAssemblyInfo.cache
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.RazorAssemblyInfo.cs
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.AssemblyInfoInputs.cache
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.AssemblyInfo.cs
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.RazorTargetAssemblyInfo.cache
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.dll
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\obj\Debug\netcoreapp2.2\packt_webapp.pdb
+C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\bin\Debug\netcoreapp2.2\nlog.config

@@ -1,0 +1,287 @@
+2019-08-26 15:37:22.9279||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:37:23.0126||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:37:43.1564||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:37:46.9752||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:37:46.9923||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:39:24.7270||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:39:24.8270||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:39:51.9582||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:39:51.9757||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:39:55.9931||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:39:56.0064||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:39:59.1155||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:39:59.1321||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:40:06.4112||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:40:06.4265||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:40:19.7380||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:40:19.7752||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:40:19.9608|10100|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'packt_webapp.Entities.PacktDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): The number of rows provided for a FETCH clause must be greater then zero.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:c0423811-cecc-4dfc-b65d-4006a70a33d3
+Error Number:10744,State:1,Class:15 System.Data.SqlClient.SqlException (0x80131904): The number of rows provided for a FETCH clause must be greater then zero.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:c0423811-cecc-4dfc-b65d-4006a70a33d3
+Error Number:10744,State:1,Class:15|url: |action: 
+2019-08-26 15:40:29.6251|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Data.SqlClient.SqlException (0x80131904): The number of rows provided for a FETCH clause must be greater then zero.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at packt_webapp.Controllers.CustomersController.GetAllCustomers(CustomerQueryParameters customerQueryParameters) in C:\Users\pontelbahia\Desktop\Curso web\packt_webapp\packt_webapp\Controllers\CustomersController.cs:line 34
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c0423811-cecc-4dfc-b65d-4006a70a33d3
+Error Number:10744,State:1,Class:15|url: |action: 
+2019-08-26 15:40:35.2007||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:40:35.2086||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:40:51.4067||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:40:53.9809||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:40:55.2554||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:41:01.6175||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:41:01.6378||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:41:38.0498||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:41:38.0601||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:44:29.5315||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:44:29.6287||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:44:34.7739||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:44:34.7883||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:49:52.0659||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:49:52.2114||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:50:32.9485||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:50:32.9598||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:50:33.0737|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'where (([x].FirstName.ToLowerInvariant() == __ToLowerInvariant_0) OrElse ([x].LastName.ToLowerInvariant() == __ToLowerInvariant_0))' could not be translated and will be evaluated locally. |url: |action: 
+2019-08-26 15:50:33.1420|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'Skip(__p_1)' could not be translated and will be evaluated locally. |url: |action: 
+2019-08-26 15:50:33.1622|20500|WARN|Microsoft.EntityFrameworkCore.Query|The LINQ expression 'Take(__p_2)' could not be translated and will be evaluated locally. |url: |action: 
+2019-08-26 15:50:35.2534||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:50:35.3038||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:56:36.3917||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:56:36.5416||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:56:41.4301||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:56:41.4654||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:57:15.3876||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:57:15.4004||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:57:18.3830||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:57:18.3968||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:57:28.1452||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:57:28.1968||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 15:57:39.0075||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 15:57:39.0219||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 17:43:40.5857|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider.get_ApiDescriptionGroups()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 17:43:43.5173|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 17:43:46.8431|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 17:43:58.0499|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 18:11:11.8416|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 18:13:26.5016|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 18:15:19.9494|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.GetTreeRouter()
+   at Microsoft.AspNetCore.Mvc.Internal.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Routing.RouteCollection.RouteAsync(RouteContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 18:16:43.8952|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The following errors occurred with attribute routing information:
+
+Error 1:
+Attribute routes with the same name 'GetSingleCustomer' must have the same template:
+Action: 'packt_webapp.Controllers.Customers2Controller.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers2/{id}'
+Action: 'packt_webapp.Controllers.CustomersController.GetSingleCustomer (packt_webapp)' - Template: 'api/Customers/{id}'
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorBuilder.Build(ApplicationModel application)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.UpdateCollection()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.Initialize()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.DefaultActionDescriptorCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescriptionGroupCollectionProvider.get_ApiDescriptionGroups()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath, String[] schemes)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: |action: 
+2019-08-26 18:19:37.6025||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 18:19:40.0984||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 18:21:29.1484||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 18:21:44.7535||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
+2019-08-26 18:22:13.7529||INFO|packt_webapp.Controllers.CustomersController|CustomersController started. |url: |action: 
+2019-08-26 18:22:13.7722||INFO|packt_webapp.Controllers.CustomersController| ----> GetAllCustomers() |url: |action: 
